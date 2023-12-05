@@ -10,3 +10,12 @@ keymap.set("n", "<C-h>", "<cmd>TmuxNavigateLeft<cr>", { desc = "Go to left windo
 keymap.set("n", "<C-j>", "<cmd>TmuxNavigateDown<cr>", { desc = "Go to lower window" })
 keymap.set("n", "<C-k>", "<cmd>TmuxNavigateUp<cr>", { desc = "Go to upper window" })
 keymap.set("n", "<C-l>", "<cmd>TmuxNavigateRight<cr>", { desc = "Go to right window" })
+
+-- Select all
+keymap.set("n", "<leader>a", "gg<S-v>G", { desc = "Select all text" })
+
+-- Show special chars
+keymap.set("n", "<leader>shc", ":set list<CR>", { desc = "Show special characters" })
+
+-- Hide special chars
+keymap.set("n", "<leader>hhc", ":set nolist<CR>", { desc = "Hide special characters" })

@@ -7,11 +7,20 @@ local function augroup(name)
 end
 
 local api = vim.api
-
 local setCommentStringGrp = augroup("set-commentstring-ag")
 
+-- Enable // as the default for csharp comments.
 api.nvim_create_autocmd({ "FileType" }, {
   group = setCommentStringGrp,
   pattern = { "cs" },
   command = "lua vim.api.nvim_buf_set_option(0, 'commentstring', '// %s')",
+})
+
+-- Disable the concealing in some file formats
+-- The default conceallevel is 3 in LazyVim
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = { "json", "jsonc", "markdown" },
+  callback = function()
+    vim.opt.conceallevel = 0
+  end,
 })
