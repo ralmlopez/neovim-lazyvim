@@ -24,3 +24,9 @@ vim.api.nvim_create_autocmd("FileType", {
     vim.opt.conceallevel = 0
   end,
 })
+
+-- Set color column color
+vim.cmd([[hi ColorColumn guibg='#343434' ]])
+
+-- set cursor line color
+vim.cmd([[hi CursorLine guibg='#313131' ]])
