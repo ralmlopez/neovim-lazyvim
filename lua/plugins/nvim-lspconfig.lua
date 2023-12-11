@@ -13,6 +13,27 @@ return {
         --   client.server_capabilities.semanticTokensProvider = nil
         -- end,
       },
+      html = {
+        filetypes = {
+          "html",
+          "javascript",
+          "javascriptreact",
+          "javascript.jsx",
+          "typescript",
+          "typescriptreact",
+          "typescript.tsx",
+        },
+      },
+      emmet_ls = {
+        init_options = {
+          html = {
+            options = {
+              ["bem.enabled"] = true,
+            },
+          },
+        },
+      },
+      cssls = {},
     },
   },
 }
