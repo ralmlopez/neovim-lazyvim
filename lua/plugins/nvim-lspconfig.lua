@@ -9,9 +9,9 @@ return {
         -- after upgrade from neovim 0.8.3 to 0.9.0 need
         -- to turn off semantic highlighting from server to prevent E5248: Invalid character in group name
         -- every time you open a c# file.
-        -- on_attach = function(client, bufnr)
-        --   client.server_capabilities.semanticTokensProvider = nil
-        -- end,
+        on_attach = function(client, bufnr)
+          client.server_capabilities.semanticTokensProvider = nil
+        end,
       },
       html = {
         filetypes = {
