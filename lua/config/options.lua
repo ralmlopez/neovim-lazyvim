@@ -48,3 +48,6 @@ opt.backspace = "indent,eol,start"
 opt.list = false
 -- when showing hidden characters what they should show up as
 opt.listchars = { eol = "¬", tab = ">·", trail = "~", extends = ">", precedes = "<", space = "␣" }
+
+-- disable formatting on save
+vim.g.autoformat = false
