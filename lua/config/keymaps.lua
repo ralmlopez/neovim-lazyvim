@@ -19,3 +19,6 @@ keymap.set("n", "<leader>shc", ":set list<CR>", { desc = "Show special character
 
 -- Hide special chars
 keymap.set("n", "<leader>hhc", ":set nolist<CR>", { desc = "Hide special characters" })
+
+-- remove ending blank spaces from each line in document
+keymap.set("n", "<leader>res", ":%s/\\s\\+$//<CR>", { desc = "Remove blank space at end of all lines" })
