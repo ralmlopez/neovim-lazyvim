@@ -33,7 +33,7 @@ return {
       },
       sections = {
         lualine_a = { "mode" },
-        lualine_b = { "branch" },
+        lualine_b = {{ "branch", fmt = function(str) return string.sub(str,1,20) end }},
 
         lualine_c = {
           Util.lualine.root_dir(),

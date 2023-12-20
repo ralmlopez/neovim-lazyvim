@@ -34,7 +34,7 @@ opt.smartcase = true
 opt.cursorline = true
 
 -- Minimal number of screen lines to keep above and below the cursor
-opt.scrolloff = 8
+opt.scrolloff = 2
 
 -- include '@' as being part of a file name or path
 opt.isfname:append("@-@")
