@@ -10,7 +10,7 @@ return {
       {
         event = "neo_tree_buffer_enter",
         handler = function(arg)
-          vim.cmd([[setlocal relativenumber]])
+          vim.cmd([[setlocal number]])
         end,
       },
     },
