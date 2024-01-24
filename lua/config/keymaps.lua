@@ -21,7 +21,7 @@ keymap.set("v", "e", "j")
 
 -- Move to window using the <ctrl> hjkl keys using tmux navigator
 keymap.set("n", "<C-n>", "<cmd>TmuxNavigateLeft<cr>", { desc = "Go to left window" })
-keymap.set("n", "<C-,>", "<cmd>TmuxNavigateDown<cr>", { desc = "Go to lower window" })
+keymap.set("n", "<C-e>", "<cmd>TmuxNavigateDown<cr>", { desc = "Go to lower window" })
 keymap.set("n", "<C-u>", "<cmd>TmuxNavigateUp<cr>", { desc = "Go to upper window" })
 keymap.set("n", "<C-i>", "<cmd>TmuxNavigateRight<cr>", { desc = "Go to right window" })
 
