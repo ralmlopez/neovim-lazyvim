@@ -3,13 +3,27 @@
 -- Add any additional keymaps here
 local keymap = vim.keymap
 
-keymap.set("i", "jk", "<ESC>")
+keymap.set("i", "ne", "<ESC>")
+keymap.set("n", "n", "h")
+keymap.set("n", "u", "k")
+keymap.set("n", "i", "l")
+keymap.set("n", ",", "j")
+
+keymap.set("n", "h", "n")
+keymap.set("n", "k", "u")
+keymap.set("n", "l", "i")
+keymap.set("n", "j", ",")
+
+keymap.set("v", "n", "h")
+keymap.set("v", "u", "k")
+keymap.set("v", "i", "l")
+keymap.set("v", ",", "j")
 
 -- Move to window using the <ctrl> hjkl keys using tmux navigator
-keymap.set("n", "<C-h>", "<cmd>TmuxNavigateLeft<cr>", { desc = "Go to left window" })
-keymap.set("n", "<C-j>", "<cmd>TmuxNavigateDown<cr>", { desc = "Go to lower window" })
-keymap.set("n", "<C-k>", "<cmd>TmuxNavigateUp<cr>", { desc = "Go to upper window" })
-keymap.set("n", "<C-l>", "<cmd>TmuxNavigateRight<cr>", { desc = "Go to right window" })
+keymap.set("n", "<C-n>", "<cmd>TmuxNavigateLeft<cr>", { desc = "Go to left window" })
+keymap.set("n", "<C-,>", "<cmd>TmuxNavigateDown<cr>", { desc = "Go to lower window" })
+keymap.set("n", "<C-u>", "<cmd>TmuxNavigateUp<cr>", { desc = "Go to upper window" })
+keymap.set("n", "<C-i>", "<cmd>TmuxNavigateRight<cr>", { desc = "Go to right window" })
 
 -- Select all
 keymap.set("n", "<leader>a", "gg<S-v>G", { desc = "Select all text" })
