@@ -7,17 +7,17 @@ keymap.set("i", "ne", "<ESC>")
 keymap.set("n", "n", "h")
 keymap.set("n", "u", "k")
 keymap.set("n", "i", "l")
-keymap.set("n", ",", "j")
+keymap.set("n", "e", "j")
 
 keymap.set("n", "h", "n")
 keymap.set("n", "k", "u")
 keymap.set("n", "l", "i")
-keymap.set("n", "j", ",")
+keymap.set("n", "j", "e")
 
 keymap.set("v", "n", "h")
 keymap.set("v", "u", "k")
 keymap.set("v", "i", "l")
-keymap.set("v", ",", "j")
+keymap.set("v", "e", "j")
 
 -- Move to window using the <ctrl> hjkl keys using tmux navigator
 keymap.set("n", "<C-n>", "<cmd>TmuxNavigateLeft<cr>", { desc = "Go to left window" })
