@@ -3,7 +3,6 @@
 -- Add any additional keymaps here
 local keymap = vim.keymap
 
-keymap.set("i", "ne", "<ESC>")
 keymap.set("n", "n", "h")
 keymap.set("n", "u", "k")
 keymap.set("n", "i", "l")
