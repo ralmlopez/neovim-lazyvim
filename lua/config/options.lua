@@ -33,8 +33,8 @@ opt.smartcase = true
 -- show cursor line
 opt.cursorline = true
 
--- turn off relative numbers
-opt.relativenumber = false
+-- turn on relative numbers
+opt.relativenumber = true
 
 -- Minimal number of screen lines to keep above and below the cursor
 opt.scrolloff = 2
