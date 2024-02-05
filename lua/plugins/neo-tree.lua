@@ -37,7 +37,6 @@ return {
   opts = {
     window = {
       mappings = {
-        ["o"] = "open",
         ["e"] = "noop",
         ["ox"] = "toggle_auto_expand_width",
       },
