@@ -20,3 +20,6 @@ keymap.set("n", "<leader>hhc", ":set nolist<CR>", { desc = "Hide special charact
 
 -- remove ending blank spaces from each line in document
 keymap.set("n", "<leader>res", ":%s/\\s\\+$//<CR>", { desc = "Remove blank space at end of all lines" })
+
+-- show Markdown preview
+keymap.set("n", "<C-m><C-p>", "<Plug>MarkdownPreview<cr>", { desc = "Show Markdown preview in browser" })
