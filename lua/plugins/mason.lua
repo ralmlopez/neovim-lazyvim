@@ -7,12 +7,9 @@ return {
         "emmet-ls",
         "html-lsp",
         "lua-language-server",
-        "omnisharp",
         "prettierd",
         "shfmt",
         "stylua",
-        "typescript-language-server",
-        "vtsls",
     },
   }
 }
