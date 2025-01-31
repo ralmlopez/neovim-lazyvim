@@ -8,5 +8,6 @@ return
         if not status_ok then
             return
         end
+        url_open.setup({})
     end
 }
