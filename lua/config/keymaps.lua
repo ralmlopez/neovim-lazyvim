@@ -21,4 +21,7 @@ keymap.set("n", "<leader>hhc", ":set nolist<CR>", { desc = "Hide special charact
 -- remove ending blank spaces from each line in document
 keymap.set("n", "<leader>res", ":%s/\\s\\+$//<CR>", { desc = "Remove blank space at end of all lines" })
 
+-- Replace newlines with spaces in visual selection and clear selection
+keymap.set("v", "<leader>rnl", ":s/\\n/ /g<CR><Esc>", { desc = "Replace newlines with spaces in selection" })
+
 keymap.set("n", "gx", "<esc>:URLOpenUnderCursor<cr>")
