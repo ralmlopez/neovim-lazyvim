@@ -43,7 +43,7 @@ opt.scrolloff = 2
 opt.isfname:append("@-@")
 
 -- highlight column in editor
-opt.colorcolumn = "120"
+opt.colorcolumn = "80,120"
 
 -- allow backspace over these
 opt.backspace = "indent,eol,start"

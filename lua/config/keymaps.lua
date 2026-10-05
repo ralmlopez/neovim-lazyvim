@@ -25,3 +25,18 @@ keymap.set("n", "<leader>res", ":%s/\\s\\+$//<CR>", { desc = "Remove blank space
 keymap.set("v", "<leader>rnl", ":s/\\n/ /g<CR><Esc>", { desc = "Replace newlines with spaces in selection" })
 
 keymap.set("n", "gx", "<esc>:URLOpenUnderCursor<cr>")
+
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = { "cs", "csproj", "razor" },
+  callback = function(event)
+    local ok, omnisharp_extended = pcall(require, "omnisharp_extended")
+    if not ok then
+      return
+    end
+
+    -- Buffer-local mapping overrides the global FzfLua mapping
+    vim.keymap.set("n", "<leader>ogd", function()
+      omnisharp_extended.lsp_definitions()
+    end, { buffer = event.buf, desc = "Goto Definition (OmniSharp-extended)" })
+  end,
+})
