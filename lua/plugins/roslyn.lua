@@ -1,5 +1,9 @@
 return {
   {
+    "Hoffs/omnisharp-extended-lsp.nvim",
+    enabled = false,
+  },
+  {
     "neovim/nvim-lspconfig",
     opts = {
       servers = {
